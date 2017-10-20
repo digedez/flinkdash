@@ -38,7 +38,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
-
     AppComponent,
     MenuflinkComponent,
     SidebarflinkComponent,
@@ -54,7 +53,7 @@ import { RouterModule, Routes } from '@angular/router';
     FooterComponent,
   ],
   imports: [
-    RouterModule ,
+    //RouterModule,
     BrowserModule
   ],
   providers: [],
