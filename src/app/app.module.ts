@@ -53,7 +53,7 @@ import { RouterModule, Routes } from '@angular/router';
     FooterComponent,
   ],
   imports: [
-    //RouterModule,
+    RouterModule,
     BrowserModule
   ],
   providers: [],
