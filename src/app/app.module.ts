@@ -34,9 +34,11 @@ import { LineaComponent } from './components/linea/linea.component';
 //import { AuthGuard } from './_guards/index';
 
 
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
+
     AppComponent,
     MenuflinkComponent,
     SidebarflinkComponent,
@@ -52,6 +54,7 @@ import { LineaComponent } from './components/linea/linea.component';
     FooterComponent,
   ],
   imports: [
+    RouterModule ,
     BrowserModule
   ],
   providers: [],
