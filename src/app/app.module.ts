@@ -36,6 +36,24 @@ import { LineaComponent } from './components/linea/linea.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
+//SERVICIOS
+//import { HomeService } from './services/home.service';
+
+
+//Auth Guard
+//import { AuthGuard } from './_guards/index';
+
+// Import HttpClientModule from @angular/common/http
+import {HttpClientModule} from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+//import { ChartsModule } from 'ng2-charts';
+
+//MAPA
+//import { AgmCoreModule } from '@agm/core';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,9 +72,25 @@ import { RouterModule, Routes } from '@angular/router';
   ],
   imports: [
     RouterModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    // Include it under 'imports' in your application module
+    // after BrowserModule.
+    HttpClientModule,
+    //ChartsModule,
+    APP_ROUTING,
+    /*
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCc3lAoUQO28K7jCfA5CbH864icV7uBeLA'
+    })
+    */
+
+
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
