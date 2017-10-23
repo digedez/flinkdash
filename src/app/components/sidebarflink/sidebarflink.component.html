@@ -13,7 +13,8 @@
           <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
           <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
             <li  routerLinkActive="active">
-                <a href="../../../login.html">
+                <!--a href="../../../login.html"-->
+                <a href="">
                 <img src="https://digedez.github.io/flinkdash/assets//img-flink/homegris.png" width="25px" height="25px">
                 <span class="title">HOME</span>
                 </a>
@@ -137,10 +138,10 @@
                                   <div class="dashboard-stat3">
                                       <div class="progress-info">
                                           <div class="font-hg font-blue">
-                                                  {{ NumUsr }}
+                                                  {{ AppFirstOpen }}
                                               </div>
                                               <div class="font-grey-cascade font-md">
-                                                  <strong>Número de Usuarios Registrados</strong>
+                                                  <strong>Número de Usuarios Descargaron App</strong>
                                               </div>
                                               <br>
                                       </div>
@@ -164,10 +165,10 @@
                                   <div class="dashboard-stat3">
                                       <div class="progress-info">
                                           <div class="font-hg font-yellow">
-                                                  0
+                                                  {{ AppFirstOpen }}
                                               </div>
                                               <div class="font-grey-cascade font-md">
-                                                  <strong>Número de Usuarios Activos </strong>
+                                                  <strong>Número de Usuarios Registrados </strong>
                                               </div>
                                               <br>
 
@@ -195,10 +196,10 @@
                                     <div class="dashboard-stat3">
                                         <div class="progress-info">
                                             <div class="font-hg font-blue">
-                                                    0
+                                                    {{ Sesiones }}
                                             </div>
                                                 <div class="font-grey-cascade font-md">
-                                                    <strong>Número ingresos a la App</strong>
+                                                    <strong>Número ingresos a la App (10 s)</strong>
                                                 </div>
                                                 <br>
                                         </div>
@@ -221,7 +222,7 @@
                                     <div class="dashboard-stat3">
                                         <div class="progress-info">
                                             <div class="font-hg font-yellow">
-                                                     ---
+                                                     Administración
                                                 </div>
                                                 <div class="font-grey-cascade font-md">
                                                     <strong> Modulo más utilizado </strong>

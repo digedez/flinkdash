@@ -10,24 +10,25 @@ import 'rxjs/Rx';
 export class SidebarflinkComponent implements OnInit {
 
   results: string[];
-  NumUsr:string;
-  NumUsrAct:string;
-  Total:string;
-  TotalG:string;
-
-  homeURL:string = "https://flink-f82f5.firebaseio.com/Home.json";
-
+  AppFirstOpen:string;
+  Sesiones:string;
+  //Total:string;
+  //TotalG:string;
+  
+  homeURL:string = "https://flink-f82f5.firebaseio.com/MixPanel.json";
   // Inject HttpClient into your component or service.
    constructor(private http: Http) {}
 
    ngOnInit(): void {
      // Make the HTTP request:
+     //{"AppFirstOpen":6,"CrearMeta":2,"DetalleGasto":24,"EditarMeta":3,"Sesiones":15}
+
      this.http.get(this.homeURL).subscribe(data => {
        // Read the result field from the JSON response.
-       this.NumUsr = data.json()['NumUsr'];
-       this.NumUsrAct = data.json()['NumUsrAct'];
-       this.TotalG = data.json()['TotalG'];
-       this.Total = data.json()['Total'];
+    this.AppFirstOpen = data.json()['AppFirstOpen'];
+    this.Sesiones = data.json()['Sesiones'];
+       //this.TotalG = data.json()['TotalG'];
+       //this.Total = data.json()['Total'];
 
      });
    }
