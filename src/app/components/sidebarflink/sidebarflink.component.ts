@@ -12,9 +12,23 @@ export class SidebarflinkComponent implements OnInit {
   results: string[];
   AppFirstOpen:string;
   Sesiones:string;
+
+  CrearMeta:string;
+  DetalleGasto:string;
+  EditarGasto:string;
+  EditarMeta:string;
+
+  EntradasAdm:string;
+  EntradasHome:string;
+  EntradasMetas:string;
+
+  RealizarLogin:string;
+
+
+
   //Total:string;
   //TotalG:string;
-  
+
   homeURL:string = "https://flink-f82f5.firebaseio.com/MixPanel.json";
   // Inject HttpClient into your component or service.
    constructor(private http: Http) {}
@@ -27,6 +41,18 @@ export class SidebarflinkComponent implements OnInit {
        // Read the result field from the JSON response.
     this.AppFirstOpen = data.json()['AppFirstOpen'];
     this.Sesiones = data.json()['Sesiones'];
+
+
+    this.CrearMeta = data.json()['CrearMeta'];
+    this.DetalleGasto = data.json()['DetalleGasto'];
+    this.EditarGasto = data.json()['EditarGasto'];
+    this.EditarMeta = data.json()['EditarMeta'];
+
+
+    this.EntradasAdm = data.json()['EntradasAdm'];
+    this.EntradasHome = data.json()['EntradasHome'];
+    this.EntradasMetas = data.json()['EntradasMetas'];
+    this.RealizarLogin = data.json()['RealizarLogin'];
        //this.TotalG = data.json()['TotalG'];
        //this.Total = data.json()['Total'];
 
